@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
         ZStack {
             Rectangle()
@@ -15,6 +16,8 @@ struct ContentView: View {
                 .foregroundColor(Color.cyan)
             
             VStack {
+                AddButton()
+                
                 SummaryView()
                         
                 FeedView()
@@ -24,6 +27,9 @@ struct ContentView: View {
         }
     }
 }
+
+
+
 
 
 struct ContentView_Previews: PreviewProvider {

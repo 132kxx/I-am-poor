@@ -7,10 +7,14 @@
 
 import SwiftUI
 
+
 struct FeedRowView: View {
+
+    var date: String = "10.01"
+    
     var body: some View {
         HStack(alignment: .top) {
-            Text("10.01")
+            Text(date)
                 .font(.subheadline)
                 .padding(.top, 5)
                 .padding(.trailing, 10)
@@ -28,7 +32,7 @@ struct FeedRowView: View {
             VStack(alignment: .trailing, spacing: 2) {
                 Text("-50,000")
                     .font(.title2)
-                Text("체크카드")
+                Text("1,550")
                     .foregroundColor(.secondary)
             }
       

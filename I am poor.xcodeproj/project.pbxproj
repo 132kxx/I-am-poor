@@ -14,6 +14,9 @@
 		B42E5B0E28EAF184000DFE67 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42E5B0D28EAF184000DFE67 /* SummaryView.swift */; };
 		B42E5B1028EAF1E6000DFE67 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42E5B0F28EAF1E6000DFE67 /* FeedView.swift */; };
 		B42E5B1228EAF2ED000DFE67 /* FeedRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42E5B1128EAF2ED000DFE67 /* FeedRowView.swift */; };
+		B4880A0628FAC23F00AB7612 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4880A0528FAC23F00AB7612 /* Payment.swift */; };
+		B4880A0828FADC2100AB7612 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4880A0728FADC2100AB7612 /* FeedViewModel.swift */; };
+		B4880A0B28FADDD500AB7612 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4880A0A28FADDD500AB7612 /* AddButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		B42E5B0D28EAF184000DFE67 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		B42E5B0F28EAF1E6000DFE67 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		B42E5B1128EAF2ED000DFE67 /* FeedRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRowView.swift; sourceTree = "<group>"; };
+		B4880A0528FAC23F00AB7612 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		B4880A0728FADC2100AB7612 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		B4880A0A28FADDD500AB7612 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,11 @@
 		B42E5AFD28EAEAA7000DFE67 /* I am poor */ = {
 			isa = PBXGroup;
 			children = (
-				B42E5AFE28EAEAA7000DFE67 /* I_am_poorApp.swift */,
 				B42E5B0028EAEAA7000DFE67 /* ContentView.swift */,
-				B42E5B0D28EAF184000DFE67 /* SummaryView.swift */,
-				B42E5B0F28EAF1E6000DFE67 /* FeedView.swift */,
-				B42E5B1128EAF2ED000DFE67 /* FeedRowView.swift */,
+				B4880A0D28FAE23D00AB7612 /* Model */,
+				B4880A0C28FAE1F200AB7612 /* View */,
+				B4880A0E28FAE24300AB7612 /* ViewModel */,
+				B42E5AFE28EAEAA7000DFE67 /* I_am_poorApp.swift */,
 				B42E5B0228EAEAA8000DFE67 /* Assets.xcassets */,
 				B42E5B0428EAEAA8000DFE67 /* I_am_poor.entitlements */,
 				B42E5B0528EAEAA8000DFE67 /* Preview Content */,
@@ -76,6 +82,41 @@
 				B42E5B0628EAEAA8000DFE67 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B4880A0928FADC2600AB7612 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				B42E5B0F28EAF1E6000DFE67 /* FeedView.swift */,
+				B42E5B1128EAF2ED000DFE67 /* FeedRowView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		B4880A0C28FAE1F200AB7612 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4880A0928FADC2600AB7612 /* Feed */,
+				B42E5B0D28EAF184000DFE67 /* SummaryView.swift */,
+				B4880A0A28FADDD500AB7612 /* AddButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4880A0D28FAE23D00AB7612 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4880A0528FAC23F00AB7612 /* Payment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4880A0E28FAE24300AB7612 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4880A0728FADC2100AB7612 /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4880A0828FADC2100AB7612 /* FeedViewModel.swift in Sources */,
 				B42E5B1028EAF1E6000DFE67 /* FeedView.swift in Sources */,
 				B42E5B0128EAEAA7000DFE67 /* ContentView.swift in Sources */,
+				B4880A0B28FADDD500AB7612 /* AddButton.swift in Sources */,
+				B4880A0628FAC23F00AB7612 /* Payment.swift in Sources */,
 				B42E5AFF28EAEAA7000DFE67 /* I_am_poorApp.swift in Sources */,
 				B42E5B1228EAF2ED000DFE67 /* FeedRowView.swift in Sources */,
 				B42E5B0E28EAF184000DFE67 /* SummaryView.swift in Sources */,
